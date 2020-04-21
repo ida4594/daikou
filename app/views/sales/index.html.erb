@@ -22,3 +22,8 @@
   <%= file_field_tag :file %>
   <%= submit_tag "インポート" %>
 <% end %>
+
+<% @companies.each do |company| %>
+    <p><%= company.name %></p>
+    <p><%= company.prate %></p>
+  <% end %>

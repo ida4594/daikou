@@ -1,7 +1,8 @@
 class SalesController < ApplicationController
 
   def index
-    @sales = Sale.all
+    @sales  = Sale.all
+    @companies = Company.all
   end
 
   def import
